@@ -1,8 +1,14 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// @import "../sass/abstracts/variables";
-// @import "../sass//components/navbar";
+@import "../sass/abstracts/variables";
+@import "../sass//components/navbar";
+@import "../sass/components/header";
+@import "../sass/base/typography";
 
 .nav-link {
     background-color: red;
+}
+
+a.nav-link {
+    font-size: 0.94rem;
 }
