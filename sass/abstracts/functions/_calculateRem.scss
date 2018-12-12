@@ -1,0 +1,11 @@
+// Define default font size
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+// Calc for heights
+@function calculateHeightRem($size) {
+  $remSize: ($size / 16px) - 12;
+  @return $remSize * 1rem;
+}

@@ -3,6 +3,9 @@
 
 // ABSTRACTS
 @import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins/font-size";
+@import "../sass/abstracts/functions/calculateRem";
+@import "../sass/abstracts/functions/calculateWidth%";
 
 // BASE
 @import "../sass/base/base";

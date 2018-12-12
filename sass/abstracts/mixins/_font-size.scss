@@ -1,0 +1,11 @@
+// Support for rem units in IE8 and below
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+  }
+
+//Usage
+    // p {
+    //     @include font-size(14px)
+    //   }  

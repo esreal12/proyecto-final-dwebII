@@ -1,0 +1,7 @@
+// Calculates width percentage from a number given in pixels
+// 
+
+@function calcWidthPercentage($width) {
+    $PercentageSize: $width * 100;
+    @return ($PercentageSize / $min-width-small) + 0%;
+}

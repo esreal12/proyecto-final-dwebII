@@ -1,3 +1,52 @@
-.navigation {
-    font-size: 14px;
+// Define el tamaño de la letra del menú
+.main-navbar {
+    @include font-size(11px);
 }
+// Elimina los paddings
+.navbar {
+    padding: 0 0;
+}
+// Reajusta los paddings para hacer que el botón
+// sea del tamaño total del height.
+a.nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+// Cambia el color de las letras a blanco cuando se hace
+// hover
+.navbar-light .navbar-nav .nav-link {
+    &:hover {
+        color: $white;
+    }
+}
+// Cambia el background del item del menú cuando se hace 
+// hover
+.nav-item .nav-link {
+    &:hover {
+        background-color: $color-secondary;
+    }
+}
+
+// 
+// Dropdown Menu
+// 
+
+// Se reajustan los estilos
+.dropdown-menu {
+    @include font-size(11px);
+    border: none;
+    border-radius: 0;
+    background-color: $gray-100;
+    margin: 0 0;
+}
+.dropdown-item {
+    padding: 0.25rem 1.5rem;
+    border: 0;
+    color: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        color: #fff;
+        background-color: $color-secondary;
+    }
+}
+
