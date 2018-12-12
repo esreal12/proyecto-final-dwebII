@@ -1,14 +1,25 @@
+// BOOTSTRAP 4 MODULES  
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// ABSTRACTS
 @import "../sass/abstracts/variables";
-@import "../sass//components/navbar";
-@import "../sass/components/header";
+
+// BASE
+@import "../sass/base/base";
 @import "../sass/base/typography";
 
-.nav-link {
-    background-color: red;
-}
+// COMPONENTS
+@import "../sass/components/head";
+@import "../sass//components/main-navbar";
+@import "../sass/components//secondary-navbar";
 
-a.nav-link {
-    font-size: 0.94rem;
-}
+// LAYOUT
+
+// SECTIONS
+@import "../sass//sections/header";
+@import "../sass//sections/main";
+@import "../sass//sections/footer";
+
+// THEMES
+
+// VENDORS

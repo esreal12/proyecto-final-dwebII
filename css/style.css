@@ -6313,16 +6313,21 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-a.nav-link {
-  background-color: red; }
+body {
+  width: 80%; }
 
-.header-x {
-  background-color: blue;
-  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%); }
+.head {
+  height: 100%; }
+  .head--bg-blue {
+    background-color: #0075be; }
+  .head__logo-hacienda {
+    width: 90%;
+    position: absolute;
+    bottom: 0; }
+  .head__logo-gobierno {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
-.nav-link {
-  background-color: red; }
-
-a.nav-link {
-  font-size: 0.94rem; }
+.navigation {
+  font-size: 14px; }
