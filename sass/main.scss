@@ -4,6 +4,7 @@
 // ABSTRACTS
 @import "../sass/abstracts/variables";
 @import "../sass/abstracts/mixins/font-size";
+@import "../sass/abstracts/mixins/absolute-middle";
 @import "../sass/abstracts/functions/calculateRem";
 @import "../sass/abstracts/functions/calculateWidth%";
 
@@ -14,7 +15,9 @@
 // COMPONENTS
 @import "../sass/components/head";
 @import "../sass//components/main-navbar";
+@import "../sass/components/actionsPanel";
 @import "../sass/components//secondary-navbar";
+
 
 // LAYOUT
 
