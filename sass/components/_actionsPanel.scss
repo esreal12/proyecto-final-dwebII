@@ -1,22 +1,100 @@
 #actionsPanel {
-   background-color: red;
+//    background-color: red;
 }
 
+// SOCIAL
+// 
 .actionsPanel-social {
     padding: 0.5rem 3rem;
 
     &__container {
-        @include font-size(18px);
-        background-color: $color-primary;
+        @include font-size(23px);
+        
+        // background-color: $color-primary;
         padding: 0.5rem;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        border-radius: 4px;
+        margin-left: 2%;
     }
     
     &__element {
         @include center(both);
-
     }
 }
 
+// Agrega el ícono de denuncia ya
+i.denuncia-ya {
+    background-image: url('../../img/actionsPanel-den36.png');
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    height: 100%;
+    width: 100%;
+}
+i.fa-youtube {
+    color: #FF0000;
+}
+i.fa-facebook {
+    color: #4267B2;
+}
+i.fa-twitter {
+    color: #1B95E0;
+}
+
+
+// ACTIONS
 .actionsPanel-actions {
+    @include font-size(16px);
     
+    &__item {
+        background-color: #4267B2;
+        padding: 0.5rem;
+        border-bottom: 1px solid $color-primary-dark;
+    }
+    
+    &__icon {
+        // background-color: red;
+        color: $color-primary;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    &__icon-s {
+        color: $color-primary;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 1rem;
+        margin-left: 1.5rem;
+        padding-top: 1%;
+        text-align: center;
+    }
+    
+}
+
+@include media-breakpoint-up(xs) {  
+    .actionsPanel-actions__icon-s {
+        padding-top: 7%; 
+        height: 60px;
+    }
+}
+
+.actionsPanel-actions span {
+    color: $white;
+    display: inline-block;
+    padding-top: 2%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    word-break: break-all;
+}
+
+.actionsPanel-actions .l-t {
+    width: 48%;
 }

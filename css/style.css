@@ -6365,16 +6365,17 @@ a.nav-link {
     color: #fff;
     background-color: #0075be; }
 
-#actionsPanel {
-  background-color: red; }
-
 .actionsPanel-social {
   padding: 0.5rem 3rem; }
   .actionsPanel-social__container {
-    font-size: 18px;
-    font-size: 1.125rem;
-    background-color: #031e87;
-    padding: 0.5rem; }
+    font-size: 23px;
+    font-size: 1.4375rem;
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 4px;
+    margin-left: 2%; }
   .actionsPanel-social__element {
     position: absolute;
     top: 50%;
@@ -6382,3 +6383,61 @@ a.nav-link {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+i.denuncia-ya {
+  background-image: url("../../img/actionsPanel-den36.png");
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  height: 100%;
+  width: 100%; }
+
+i.fa-youtube {
+  color: #FF0000; }
+
+i.fa-facebook {
+  color: #4267B2; }
+
+i.fa-twitter {
+  color: #1B95E0; }
+
+.actionsPanel-actions {
+  font-size: 16px;
+  font-size: 1rem; }
+  .actionsPanel-actions__item {
+    background-color: #4267B2;
+    padding: 0.5rem;
+    border-bottom: 1px solid #000059; }
+  .actionsPanel-actions__icon {
+    color: #031e87;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+    padding-top: 1%;
+    text-align: center; }
+  .actionsPanel-actions__icon-s {
+    color: #031e87;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+    padding-top: 1%;
+    text-align: center; }
+
+.actionsPanel-actions__icon-s {
+  padding-top: 7%;
+  height: 60px; }
+
+.actionsPanel-actions span {
+  color: #fff;
+  display: inline-block;
+  padding-top: 2%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  word-break: break-all; }
+
+.actionsPanel-actions .l-t {
+  width: 48%; }
