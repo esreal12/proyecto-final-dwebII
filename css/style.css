@@ -6427,10 +6427,6 @@ i.fa-twitter {
     padding-top: 1%;
     text-align: center; }
 
-.actionsPanel-actions__icon-s {
-  padding-top: 7%;
-  height: 60px; }
-
 .actionsPanel-actions span {
   color: #fff;
   display: inline-block;
@@ -6441,3 +6437,134 @@ i.fa-twitter {
 
 .actionsPanel-actions .l-t {
   width: 48%; }
+
+.actionsPanel-actions__icon-s {
+  padding-top: 7%;
+  height: 60px; }
+
+.search-query:focus + button {
+  z-index: 3; }
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  margin-bottom: 0;
+  color: #58a3f1; }
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  margin-bottom: 0; }
+
+.input-group-btn {
+  position: relative;
+  position: relative;
+  bottom: 38px;
+  float: right; }
+
+.form-control,
+.btn {
+  border-radius: 0; }
+
+.buscar {
+  margin-top: 15px;
+  height: 55px; }
+
+.secondary-navbar {
+  background-color: #000059; }
+
+.panel-body {
+  padding: 0px; }
+
+.panel-body table tr td {
+  padding-left: 15px; }
+
+.panel-body .table {
+  margin-bottom: 0px; }
+
+.panel a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #6c757d;
+  line-height: 0; }
+
+.panel {
+  border-bottom: 1px solid #004a8d; }
+
+.calendario {
+  color: #000059;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #58a3f1; }
+  .calendario__titulo {
+    font-size: 23px;
+    font-size: 1.4375rem;
+    padding-bottom: 10px; }
+  .calendario__ver {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: #004a8d; }
+
+.fecha__dia {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding-top: 5px;
+  margin-right: 0.5rem;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #031e87; }
+
+.fecha__texto p {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  color: #0075be;
+  height: 50px;
+  overflow: auto; }
+
+.servicios {
+  color: #000059;
+  margin-top: 20px; }
+  .servicios__item {
+    background-color: #e9ecef; }
+
+.servicios__item img {
+  width: 90%; }
+
+.tab-nav {
+  margin-top: 20px; }
+
+.thumbnail {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #e9ecef; }
+  .thumbnail img {
+    border-radius: 10px; }
+
+.caption h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #031e87; }
+
+.card__input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  position: relative; }
+
+.card__btn {
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }

@@ -1,0 +1,12 @@
+.servicios {
+    color: $color-primary-dark; 
+    margin-top: 20px;
+
+    &__item {
+        background-color: $gray-200;
+    }
+}
+
+.servicios__item img {
+    width: 90%;
+}

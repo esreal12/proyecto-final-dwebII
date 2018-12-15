@@ -14,17 +14,20 @@
 
 // COMPONENTS
 @import "../sass/components/head";
-@import "../sass//components/main-navbar";
+@import "../sass/components/main-navbar";
 @import "../sass/components/actionsPanel";
-@import "../sass/components//secondary-navbar";
+@import "../sass/components/secondary-navbar";
+@import "../sass/components/calendario";
+@import "../sass/components/servicios";
+@import "../sass/components/tab-nav";
 
 
 // LAYOUT
 
 // SECTIONS
-@import "../sass//sections/header";
-@import "../sass//sections/main";
-@import "../sass//sections/footer";
+@import "../sass/sections/header";
+@import "../sass/sections/main-content";
+@import "../sass/sections/footer";
 
 // THEMES
 
