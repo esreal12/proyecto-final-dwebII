@@ -16,11 +16,33 @@
     margin-bottom: 20px;
 }
 
-// Media Queries 
-@include media-breakpoint-up(md) {
+//////////////////////////////////
+// MEDIA QUERIES /////////////////
+//////////////////////////////////
+
+// Media Queries XS
+@include media-breakpoint-down(xs) {
+    .head__logo-hacienda {
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+    }
+    .head__logo-gobierno {
+        width: 100%;
+    }
+}
+
+// Media Queries MD
+@include media-breakpoint-down(md) {
     .head__logo-hacienda {
         width: 90%;
         position: absolute;
         bottom: 0;
+    }
+
+    .head__logo-gobierno {
+        width: 60%;
+        margin-left: 20%;
     }
 }

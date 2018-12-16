@@ -30,7 +30,6 @@ a.nav-link {
 // 
 // Dropdown Menu
 // 
-
 // Se reajustan los estilos
 .dropdown-menu {
     @include font-size(11px);
@@ -50,3 +49,152 @@ a.nav-link {
     }
 }
 
+.mx-auto.d-sm-flex.d-block.flex-sm-nowrap {
+    text-align: center;
+}
+
+i.fas.fa-bars {
+    color: white;
+}
+.mx-auto.d-sm-flex.d-block.flex-sm-nowrap {
+    text-align: center;
+}
+
+
+// Toggle Animation
+.cta {
+    height: 50px;
+    width: 50px;
+    cursor: pointer; }
+  
+  .toggle-btn {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out; }
+    .toggle-btn:before {
+      content: "";
+      height: 4px;
+      width: 25px;
+      box-shadow: 0 -10px 0 0 #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+    .toggle-btn:after {
+      content: "";
+      height: 4px;
+      width: 25px;
+      box-shadow: 0 10px 0 0 #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+
+      .active .toggle-btn {
+        background-color: transparent;
+        transition: all 0.2s ease-in-out; }
+        .active .toggle-btn:before {
+          top: 0;
+          transition: all 0.3s ease-in-out; }
+        .active .toggle-btn:after {
+          top: 0;
+          transition: all 0.3s ease-in-out; }
+      .active .type1:before {
+        left: 6px;
+        transform: translateY(6px) rotate(-45deg); }
+      .active .type1:after {
+        top: 0;
+        left: 6px;
+        transform: translateY(-8px) rotate(45deg); }
+
+
+
+//////////////////////////////////
+// MEDIA QUERIES /////////////////
+//////////////////////////////////
+// XS
+@include media-breakpoint-down(xs) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+    button.navbar-toggler {
+        background-color: $color-secondary-light;
+        border-radius: 0;
+        outline: none;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1em;
+        color: $white;
+        height: 1em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, 0.0);
+        border-color: rgba(0, 0, 0, 0.0);
+    }
+            li.nav-item.active {
+                color: $color-primary-dark !important;
+            }
+    a.nav-link {
+        @include font-size(16px);
+        text-align: center;
+        
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+}
+// MD
+@include media-breakpoint-down(md) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+    button.navbar-toggler {
+        background-color: $color-secondary-light;
+        border-radius: 0;
+        outline: none;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1em;
+        color: $white;
+        height: 1em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, 0.0);
+        border-color: rgba(0, 0, 0, 0.0);
+    }
+            li.nav-item.active {
+                color: $color-primary-dark !important;
+            }
+    a.nav-link {
+        @include font-size(16px);
+        text-align: center;
+        
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+    .main-navbar {
+        background-color: #58a3f1;
+    }
+}

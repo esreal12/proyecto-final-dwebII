@@ -1,0 +1,18 @@
+footer {
+    background-color: $color-primary;
+    color: $white;
+
+    & .info-mobile a {
+        // widows: 100%;
+        display: block;
+        color: $white;
+        border-bottom: 1px solid $color-secondary-light;
+        // float: right;
+        text-align: center;
+    }
+
+    & .info-mobile p {
+        text-align: center;
+        color: $gray-500;
+    }
+}

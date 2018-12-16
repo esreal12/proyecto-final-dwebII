@@ -17,38 +17,40 @@
 
 <body class="container-fluid">
 
-
-
     <header>
 
         <div class="row head">
 
-            <div class="col-md-3 head__main-logo">
+            <div class="col-6 col-md-3 head__main-logo">
                 <a href="#">
                     <img src="img/logo-ministerio-hacienda.jpg" alt="Logotipo Ministerio de Hacienda" class="head__logo-hacienda">
                 </a>
             </div>
 
-            <div class="col-md-7 head--bg-blue"></div>
+            <div class="col-7 d-none d-md-block col-md-7 head--bg-blue"></div>
 
-            <div class="col-md-2 d-none d-md-block head--bg-blue">
+            <div class="col-6 col-md-2 head--bg-blue">
                 <img src="img/logo-gobierno-cr.png" alt="Logotipo Gobierno del Bicentenario" class="head__logo-gobierno">
             </div>
 
         </div>
 
-        <div class="row main-navbar justify-content-center bg-light mt-2">
+        <div class="row main-navbar justify-content-center">
 
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <!-- <i class="fas fa-bars"></i> -->
+                    <div class="cta">
+                            <div class="toggle-btn type1"></div>
+                    </div>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item nav-item-active active">
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
@@ -91,7 +93,7 @@
 
 
     <main>
-        <section class="row mt-2" id="actionsPanel">
+        <section class="row" id="actionsPanel">
 
             <div class="col-md-3 actionsPanel-social mx-auto">
                 <div class="row mx-auto">
@@ -140,47 +142,47 @@
                 </div>
             </div>
 
-            <div class="col-md-6 actionsPanel-actions bg-dark">
+            <div class="col-md-6 actionsPanel-actions">
                 <div class="row">
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
                         <div class="actionsPanel-actions__icon">
-                            <i class="fas fa-phone align-middle"></i>
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <span class="align-middle">Directorio</span>
+                        <span>Directorio</span>
                     </div>
-                    <div class="col-sm-6 actionsPanel-actions__item">
-                        <div class="actionsPanel-actions__icon">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
+                        <div class="actionsPanel-actions__icon-s">
                             <i class="fas fa-question"></i>
                         </div>
-                        <span>Preguntas de Interés</span>
+                        <span class="l-t">Preguntas de Interés</span>
                     </div>
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
                         <div class="actionsPanel-actions__icon">
                             <i class="fas fa-file-alt"></i>
                         </div>
-                        <span>Mejora Regulatoria</span>
+                        <span class="l-t">Mejora Regulatoria</span>
                     </div>
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
                         <div class="actionsPanel-actions__icon">
                             <i class="fas fa-file-invoice"></i>
                         </div>
-                        <span>Factura Electrónica</span>
+                        <span class="l-t">Factura Electrónica</span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
                         <div class="actionsPanel-actions__icon">
                             <i class="fas fa-calculator"></i>
                         </div>
-                        <span>Tributación Digital</span>
+                        <span class="l-t">Tributación Digital</span>
                     </div>
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 actionsPanel-actions__item">
                         <div class="actionsPanel-actions__icon-s">
                             <i class="fas fa-desktop"></i>
                         </div>
-                        <span class="l-t">Declaraciones Informativas</span>
+                        <span class="l-t">Declaraciones</span>
                     </div>
-                    <div class="col-sm-6 actionsPanel-actions__item">
+                    <div class="col-sm-6 col-md-6 offset-md-3 actionsPanel-actions__item-f">
                         <div class="actionsPanel-actions__icon">
                             <i class="fas fa-percentage"></i>
                         </div>
@@ -190,10 +192,10 @@
 
             </div>
 
-            <div class="col-md-3 buscar">
-                <input type="text" class="  search-query form-control" placeholder="Buscar" />
+            <div class="col-lg-3 buscar pt-3">
+                <input type="text" class="search-query form-control" placeholder="Buscar" />
                 <span class="input-group-btn">
-                    <button class="btn btn-danger" type="button">
+                    <button class="btn" type="button">
                         <span class="fas fa-search"></span>
                     </button>
                 </span>
@@ -201,17 +203,17 @@
 
         </section>
 
-        <section class="row-fluid mt-2" id="mainContent">
-            <div class="left-content">
+        <section class="row mt-2" id="mainContent">
+            <div class="left-content col-sm-5">
                 <div class="secondary-navbar">
-                    <div class="col-sm-3 col-md-3">
+                    <div class="col-sm-12 col-md-5">
                         <div class="panel-group" id="accordion">
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Información
-                                            General <i class="fas fa-caret-down"></i></a>
+                                            General <i class="fas fa-caret-down fa-size"></i></a>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
@@ -287,7 +289,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Normativa
-                                            y Jurisprudencia</a><i class="fas fa-caret-down"></i>
+                                            y Jurisprudencia<i class="fas fa-caret-down fa-size"></i></a>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
@@ -321,7 +323,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Acuerdos
-                                            y Convenios Internacionales</a><i class="fas fa-caret-down"></i>
+                                            y Convenios Internacionales<i class="fas fa-caret-down fa-size"></i></a>
                                     </h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
@@ -517,8 +519,8 @@
                 </div>
             </div>
 
-            <div class="right-content bg-light">
-                <div class="carousel order-first">
+            <div class="right-content col-sm-7 bg-light">
+                <div class="carousel">
                     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -590,8 +592,38 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Otras Noticias</h5>
-                                            <input type="text" placeholder="" class="form-control card__input col-12">
+                                            <input type="text" placeholder="DD/MM/YY" class="form-control card__input col-12">
                                             <a href="#" class="btn btn-primary card__btn">Ir</a>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#">
+                                                        <div class="otras-noticias p-2">
+                                                            <span>14/04/2018</span>
+                                                            <p class="p-1">17 DE DICIEMBRE VENCE PLAZO PARA PRESENTAR
+                                                                DECLARACIÓN Y PAGAR SIN RECARGO IMPUESTO DE RENTA 2018</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">
+                                                        <div class="otras-noticias p-2">
+                                                            <span>04/11/2018</span>
+                                                            <p class="p-1">ADUANA PASO CANOAS RECUPERA $72.000 EN
+                                                                IMPORTACIÓN DE HELICÓPTERO</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">
+                                                        <div class="otras-noticias p-2">
+                                                            <span>12/09/1989</span>
+                                                            <p class="p-1">ADUANAS PRESENTÓ 60 DENUNCIAS PENALES CONTRA
+                                                                IMPORTADORES POR SUBFACTURACIÓN DE MERCANCÍAS</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -615,18 +647,59 @@
                     </div>
                 </div>
 
-
-        </section>
-
-        <section>
-
         </section>
     </main>
 
 
 
-    <footer>
+    <footer class="container-fluid pt-3 p-4">
+        <div class="row">
+            <div class="info-mobile col-12 mx-auto">
+                <a href="https://www.hacienda.go.cr/usdk">Mesa de Servicio</a>
+               
+                <a href="https://correo.hacienda.go.cr/owa" target="_blank">Correo
+                    institucional</a>
+                <p>Actualizado a diciembre 2018</p>
+            </div>
+            <div id="contacto" class="col-md-4 d-none d-md-block">
+                <span>
+                    Ministerio de Hacienda
+                    <br>
+                    República de Costa Rica<br>
+                    San José, Avenida 2da<br>
+                    Calle 1 y 3, diagonal al Teatro Nacional <br>
+                    Correo electrónico: <a style="color: #fff; text-decoration: underline" href="mailto:comunicacionmh@hacienda.go.cr">comunicacionmh@hacienda.go.cr</a><br>
+                    Central telefónica: 2284-5000<br>
+                    Horario de atención: Lunes a viernes de 8:00 a.m. a 4:00 p.m.<br>
+                </span>
+            </div>
+        </div>
 
+        <div class="row">
+            <a href="https://www.hacienda.go.cr/contenido/14526-comision-de-rescate-y-formacion-de-valores" class="col-6 mx-auto">
+                <img src="https://www.hacienda.go.cr/docs/5b17dc49ae7a0_icono-VALORES.png" alt="Comision de rescate y formacion de valores"
+                    class="img-fluid pt-3">
+            </a>
+
+            <a href="http://mapa.presidencia.go.cr/" class="col-6">
+                <img src="https://www.hacienda.go.cr/docs/5a61f4129a0f8_mapaObras.png" alt="Mapas de Obras" class="img-fluid">
+            </a>
+            <div class="row">
+                <a href="https://serviciosintegra.hacienda.go.cr/Coletillas/account/Login.cshtml" class="col-4">
+                    <img src="https://www.hacienda.go.cr/docs/5877d9ef74905_iconocoletillasdd.png" alt="Consulta de Coletillas"
+                        class="img-fluid">
+                </a>
+
+                <a href="#" alt="Bandera Azul" class="col-4">
+                    <img src="img/logo-bandera-azul.png" alt="Bandera Azul" class="img-fluid">
+                </a>
+
+                <a href="https://www.hacienda.go.cr/contenido/12835-red-interinstitucional-de-transparencia" class="col-4 mx-auto">
+                    <img src="img/logo-red-transparenciasm.png" alt="Red Interinstitucional de Transparencia" class="img-fluid">
+                </a>
+            </div>
+
+        </div>
     </footer>
 
 

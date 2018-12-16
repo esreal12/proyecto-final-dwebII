@@ -1,6 +1,6 @@
 // Secondary Navbar
 .secondary-navbar {
-    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-dark;
 }
 
 .panel-body { padding:0px; }
@@ -10,9 +10,20 @@
 .panel a { 
     @include font-size(14px);
     color: $gray-600;
-    line-height: 0;
+    display: block;
+    padding-top: 11px;
+    line-height: 1.5;
+}
+
+.panel td a {
+    padding-top: 0;
 }
 
 .panel {
     border-bottom: 1px solid $color-secondary-dark;
+}
+
+.fa-size {
+    @include font-size(11px);
+    margin-left: 5px;
 }
