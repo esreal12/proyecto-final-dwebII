@@ -6,13 +6,18 @@ footer {
         // widows: 100%;
         display: block;
         color: $white;
-        border-bottom: 1px solid $color-secondary-light;
+        // border-bottom: 1px solid $color-secondary-light;
         // float: right;
-        text-align: center;
+        text-align: right;
     }
 
     & .info-mobile p {
-        text-align: center;
+        @include font-size(12px);
+        text-align: right;
         color: $gray-500;
     }
+}
+
+#contacto {
+    @include font-size(13px);
 }

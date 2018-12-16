@@ -19,11 +19,17 @@
     padding-top: 0;
 }
 
-.panel {
+.panel:not(:last-child){
     border-bottom: 1px solid $color-secondary-dark;
 }
 
 .fa-size {
     @include font-size(11px);
     margin-left: 5px;
+}
+
+@include media-breakpoint-down(md) { 
+    .secondary-navbar {
+        margin: 0 1%;
+    }
 }

@@ -3,10 +3,17 @@ body {
 }
 
 h1,
-h2,
 h3,
-h4,
 h5,
 h6 {
     font-family: $font-secondary;
+}
+
+h2, h4 {
+    font-family: $font-secondary;
+    font-weight: 900;
+}
+
+a {
+    color: $color-secondary;
 }

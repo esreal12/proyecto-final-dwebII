@@ -1,6 +1,9 @@
 // Define el tamaño de la letra del menú
 .main-navbar {
     @include font-size(11px);
+    background-color: $gray-100;
+    border-bottom: 10px solid $color-secondary-light;
+    margin-bottom: 20px;
 }
 // Elimina los paddings
 .navbar {
@@ -197,4 +200,9 @@ i.fas.fa-bars {
     .main-navbar {
         background-color: #58a3f1;
     }
+}
+
+// SPECIAL QUERIES
+@media (max-width: 991.98px) {
+    
 }

@@ -2,6 +2,29 @@
     margin-top: 20px;
 }
 
+.nav-item .nav-link:hover {
+    background-color: $color-secondary-light;
+    color: $white;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: $color-primary;
+    background-color: #fff;
+    border-color: $color-primary-light $color-secondary-light #fff;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $color-secondary-light;
+}
+a#pills-home-tab, a#pills-profile-tab {
+    border-radius: 0;
+}
+.tab-content {
+    border-left: 1px solid $color-secondary-light;
+    border-right: 1px solid $color-secondary-light;
+    border-bottom: 1px solid $color-secondary-light;
+}
+
 .thumbnail {
     overflow: hidden;
     border-radius: 10px;
